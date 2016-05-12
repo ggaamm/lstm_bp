@@ -7,20 +7,20 @@ import tensorflow as tf
 from tensorflow.models.rnn import rnn, rnn_cell
 import os
 
-trace_directory = '/Users/gorkeralp/Dropbox/Okul/Research/branchprediction_champ2016/tensorflow_test/'
-model_directory = '/Users/gorkeralp/Downloads/'
+trace_directory = '/home/alp/Downloads/cbp2016_ver3_dataprep/tensorflow_traces1/'
+model_directory = '/home/alp/Downloads/'
 
 # Parameters
 learning_rate = 0.001
 training_iters = 1000
-batch_size = 500
-display_step = 100
-number_of_layers = 8
+batch_size = 1000
+display_step = 1000
+number_of_layers = 4
 
 # Network Parameters
 n_input = 2 # MNIST data input [0,1] or [1,0]
-n_steps = 25 # timesteps
-n_hidden = 25 # hidden layer num of features
+n_steps = 20 # timesteps
+n_hidden = 20 # hidden layer num of features
 n_classes = 2 # MNIST total classes (0-9 digits)
 
 # tf Graph input
